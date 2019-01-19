@@ -549,7 +549,8 @@ namespace Sgry.Azuki
 			// draw lines on the ruler
 			g.FontInfo = _HRulerFont;
 			lineX = leftMostLineX;
-			rulerIndex = leftMostRulerIndex;
+            lineX -= HRulerUnitWidth;
+            rulerIndex = leftMostRulerIndex;
 			while( lineX < clipRect.Right )
 			{
 				// draw ruler line
@@ -565,7 +566,7 @@ namespace Sgry.Azuki
                     pos = new Point(lineX + 2, YofHRuler);
                     g.DrawText(columnNumberText, ref pos, Utl.ForeColorOfLineNumber(ColorScheme));
                 }
-                if ( (rulerIndex % 10) == 0 )
+                if ((rulerIndex != 0 && (rulerIndex % 10) == 0) || rulerIndex == 1 )
 				{
 					Point pos;
 
