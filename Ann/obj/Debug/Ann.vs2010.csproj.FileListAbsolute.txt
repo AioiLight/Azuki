@@ -1,0 +1,11 @@
+C:\Users\info\Source\Repos\Azuki\Ann\bin\Debug\Ann.exe
+C:\Users\info\Source\Repos\Azuki\Ann\bin\Debug\Ann.pdb
+C:\Users\info\Source\Repos\Azuki\Ann\bin\Debug\Azuki.dll
+C:\Users\info\Source\Repos\Azuki\Ann\bin\Debug\Azuki.pdb
+C:\Users\info\Source\Repos\Azuki\Ann\obj\Debug\Ann.vs2010.csprojAssemblyReference.cache
+C:\Users\info\Source\Repos\Azuki\Ann\obj\Debug\Sgry.Ann.Resource.resources
+C:\Users\info\Source\Repos\Azuki\Ann\obj\Debug\Ann.vs2010.csproj.GenerateResource.cache
+C:\Users\info\Source\Repos\Azuki\Ann\obj\Debug\Ann.vs2010.csproj.CoreCompileInputs.cache
+C:\Users\info\Source\Repos\Azuki\Ann\obj\Debug\Ann.vs2010.csproj.CopyComplete
+C:\Users\info\Source\Repos\Azuki\Ann\obj\Debug\Ann.exe
+C:\Users\info\Source\Repos\Azuki\Ann\obj\Debug\Ann.pdb

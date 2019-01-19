@@ -553,7 +553,19 @@ namespace Sgry.Azuki
 			while( lineX < clipRect.Right )
 			{
 				// draw ruler line
-				if( (rulerIndex % 10) == 0 )
+                if(rulerIndex == 4 || rulerIndex == 8 || rulerIndex == 12 || rulerIndex == 16 || rulerIndex == 24 || rulerIndex == 32 || rulerIndex == 48 || rulerIndex == 64)
+                {
+                    Point pos;
+
+                    // draw largest line
+                    g.DrawLine(lineX, YofHRuler, lineX, YofHRuler + HRulerHeight);
+
+                    // draw column text
+                    columnNumberText = rulerIndex.ToString();
+                    pos = new Point(lineX + 2, YofHRuler);
+                    g.DrawText(columnNumberText, ref pos, Utl.ForeColorOfLineNumber(ColorScheme));
+                }
+                if ( (rulerIndex % 10) == 0 )
 				{
 					Point pos;
 
@@ -561,7 +573,7 @@ namespace Sgry.Azuki
 					g.DrawLine( lineX, YofHRuler, lineX, YofHRuler+HRulerHeight );
 
 					// draw column text
-					columnNumberText = (rulerIndex / 10).ToString();
+					columnNumberText = rulerIndex < 1000 ? rulerIndex.ToString() : (rulerIndex / 10).ToString();
 					pos = new Point( lineX+2, YofHRuler );
 					g.DrawText( columnNumberText, ref pos, Utl.ForeColorOfLineNumber(ColorScheme) );
 				}
