@@ -549,7 +549,7 @@ namespace Sgry.Azuki
 			// draw lines on the ruler
 			g.FontInfo = _HRulerFont;
 			lineX = leftMostLineX;
-            lineX -= HRulerUnitWidth;
+            if(!HRulerStartsFromZero) lineX -= HRulerUnitWidth;
             rulerIndex = leftMostRulerIndex;
 			while( lineX < clipRect.Right )
 			{

@@ -685,10 +685,29 @@ namespace Sgry.Azuki.WinForms
 			}
 		}
 
-		/// <summary>
-		/// Gets or sets whether to show horizontal scroll bar or not.
+        /// <summary>
+		/// Gets or sets c to start zero horizontal ruler or one.
 		/// </summary>
-		[Category("Appearance")]
+        [Category("Appearance")]
+        [DefaultValue(true)]
+        [Description("Set true to show horizontal ruler.")]
+        public bool HRulerStartsFromZero
+        {
+            get { return View.HRulerStartsFromZero; }
+            set
+            {
+                if (View.HRulerStartsFromZero != value)
+                {
+                    View.HRulerStartsFromZero = value;
+                    Invalidate();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets whether to show horizontal scroll bar or not.
+        /// </summary>
+        [Category("Appearance")]
 		[DefaultValue(true)]
 		[Description("Set true to show horizontal scroll bar.")]
 		public bool ShowsHScrollBar

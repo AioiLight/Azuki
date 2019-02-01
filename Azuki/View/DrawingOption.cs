@@ -39,6 +39,11 @@ namespace Sgry.Azuki
 		HighlightsMatchedBracket= 0x0200,
 
 		/// <summary>Whether to include wrapped screen lines for line numbering.</summary>
-		UseScreenLineNumber	= 0x0400
+		UseScreenLineNumber	= 0x0400,
+
+        /// <summary>
+        /// Gets or sets c to start zero horizontal ruler or one.
+        /// </summary>
+        HRulerStartsFromZero = 0x800,
 	}
 }

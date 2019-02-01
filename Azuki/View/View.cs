@@ -471,16 +471,34 @@ namespace Sgry.Azuki
 			}
 		}
 
-		/// <summary>
-		/// Gets or sets whether to show 'dirt bar' or not.
-		/// </summary>
-		/// <remarks>
-		/// <para>
-		/// This property gets or sets whether to show 'dirt bar' or not.
-		/// The 'dirt bar'
-		/// </para>
-		/// </remarks>
-		public bool ShowsDirtBar
+        /// <summary>
+        /// Gets or sets whether to show horizontal ruler or not.
+        /// </summary>
+        public bool HRulerStartsFromZero
+        {
+            get { return (DrawingOption & DrawingOption.HRulerStartsFromZero) != 0; }
+            set
+            {
+                if (value)
+                    DrawingOption |= DrawingOption.HRulerStartsFromZero;
+                else
+                    DrawingOption &= ~DrawingOption.HRulerStartsFromZero;
+
+                _UI.UpdateCaretGraphic();
+                Invalidate();
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets whether to show 'dirt bar' or not.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// This property gets or sets whether to show 'dirt bar' or not.
+        /// The 'dirt bar'
+        /// </para>
+        /// </remarks>
+        public bool ShowsDirtBar
 		{
 			get{ return (DrawingOption & DrawingOption.ShowsDirtBar) != 0; }
 			set

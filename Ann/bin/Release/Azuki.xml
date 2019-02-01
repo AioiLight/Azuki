@@ -6387,6 +6387,11 @@
         <member name="F:Sgry.Azuki.DrawingOption.UseScreenLineNumber">
             <summary>Whether to include wrapped screen lines for line numbering.</summary>
         </member>
+        <member name="F:Sgry.Azuki.DrawingOption.HRulerStartsFromZero">
+            <summary>
+            Gets or sets c to start zero horizontal ruler or one.
+            </summary>
+        </member>
         <member name="T:Sgry.Azuki.HRulerIndicatorType">
             <summary>
             Type of the indicator on horizontal ruler to indicate caret position.
@@ -6483,6 +6488,11 @@
         <member name="P:Sgry.Azuki.IView.ShowsHRuler">
             <summary>
             Gets or sets whether to show horizontal ruler or not.
+            </summary>
+        </member>
+        <member name="P:Sgry.Azuki.IView.HRulerStartsFromZero">
+            <summary>
+            Gets or sets c to start zero horizontal ruler or one.
             </summary>
         </member>
         <member name="P:Sgry.Azuki.IView.ShowsDirtBar">
@@ -7350,6 +7360,11 @@
             Gets or sets whether to show horizontal ruler or not.
             </summary>
         </member>
+        <member name="P:Sgry.Azuki.View.HRulerStartsFromZero">
+            <summary>
+            Gets or sets whether to show horizontal ruler or not.
+            </summary>
+        </member>
         <member name="P:Sgry.Azuki.View.ShowsDirtBar">
             <summary>
             Gets or sets whether to show 'dirt bar' or not.
@@ -8082,6 +8097,11 @@
         <member name="P:Sgry.Azuki.WinForms.AzukiControl.ShowsHRuler">
             <summary>
             Gets or sets whether to show horizontal ruler or not.
+            </summary>
+        </member>
+        <member name="P:Sgry.Azuki.WinForms.AzukiControl.HRulerStartsFromZero">
+            <summary>
+            Gets or sets c to start zero horizontal ruler or one.
             </summary>
         </member>
         <member name="P:Sgry.Azuki.WinForms.AzukiControl.ShowsHScrollBar">
